@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Father Pay
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Проект **Father Pay** разработан с использованием React и React Router DOM, собранное с помощью Webpack. В данном руководстве вы найдете инструкции по установке и запуску приложения.
 
-## Available Scripts
+## Системные требования
 
-In the project directory, you can run:
+Для корректной работы проекта вам потребуется:
 
-### `npm start`
+- Node.js версии 12 и выше
+- npm версии 6 и выше
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Установка
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Клонируйте репозиторий**
 
-### `npm test`
+   Сначала клонируйте репозиторий на ваш локальный компьютер. Вы можете сделать это, используя команду:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/AnastaciaTseveleva/Steam-Pay.git
+   ```
 
-### `npm run build`
+2. **Переходите в директорию проекта**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   Перейдите в папку с проектом:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd father-pay
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Установите зависимости**
 
-### `npm run eject`
+   Выполните команду ниже, чтобы установить все необходимые зависимости для проекта:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Сборка
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+После установки зависимостей вы можете собрать проект. Используйте следующую команду:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+```
 
-## Learn More
+Это создаст оптимизированную версию приложения в папке `dist`, которая готова к развертыванию.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Запуск
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Для запуска приложения на локальном сервере выполните команду:
 
-### Code Splitting
+```bash
+npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+После этого приложение будет доступно по адресу `http://localhost:3000`. Вы можете открыть этот адрес в вашем веб-браузере, чтобы начать взаимодействовать с приложением.
 
-### Analyzing the Bundle Size
+## Использование
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Father Pay предоставляет пользователям возможность управлять своими финансами. Вы можете:
 
-### Making a Progressive Web App
+- Создавать и отслеживать платежи
+- Управлять бюджетом
+- Просматривать историю транзакций
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Технологии
 
-### Advanced Configuration
+В этом проекте использованы следующие технологии:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React**: библиотека для построения пользовательских интерфейсов
+- **React Router DOM**: библиотека для управления навигацией
+- **Webpack**: инструмент для сборки модулей
