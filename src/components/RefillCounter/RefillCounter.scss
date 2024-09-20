@@ -1,0 +1,32 @@
+@import url(../../assets/font/Inter/stylesheet.css);
+.refill {
+  align-items: center;
+  background: linear-gradient(90deg, #21242b, rgba(33, 36, 43, 0.54));
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  &__img {
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__counter {
+    margin-left: 12px;
+  }
+  &__counter-number {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+  }
+  &__counter-label {
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgba(79, 85, 98, 1);
+  }
+}

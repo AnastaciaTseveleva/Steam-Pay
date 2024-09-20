@@ -1,0 +1,30 @@
+@import url(../../assets/font/Inter/stylesheet.css);
+.stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
+  align-items: center;
+  &__wrapper {
+  }
+  align-items: center;
+  justify-content: space-between;
+  &__title {
+    font-family: "Inter";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 41px;
+    margin-top: 9px;
+    width: 100%;
+  }
+  &__info {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+    margin-bottom: 32px;
+    // max-width: 648px;
+    width: 100%;
+  }
+}

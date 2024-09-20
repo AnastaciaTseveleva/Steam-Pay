@@ -1,0 +1,186 @@
+@import url(../../assets/font/Inter/stylesheet.css);
+
+.popup-window {
+  backdrop-filter: blur(7.5px);
+  background-color: rgba(24, 27, 34, 0.35);
+  height: 100%;
+  opacity: 0;
+  overflow: auto;
+  padding: 20px;
+  position: fixed;
+  transition: 0.2s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.popup {
+  transition: 0.2s;
+  opacity: 0;
+  position: fixed;
+  padding: 20px;
+  visibility: hidden;
+  display: flex;
+  background-color: rgba(33, 36, 43, 1);
+  border-radius: 16px;
+  flex-direction: column;
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  &__heading {
+    color: white;
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin: 0;
+  }
+  &__close-btn {
+    background-image: url(../../assets/img/Close.svg);
+    width: 24px;
+    height: 24px;
+    background-color: inherit;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    padding: 0;
+    width: 24px;
+  }
+  &__text {
+    margin-bottom: 10px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: rgba(133, 136, 146, 1);
+  }
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 32px;
+  }
+  &__list-item {
+  }
+  &__list-header {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    color: rgba(123, 88, 232, 1);
+    margin-top: 2px;
+    margin-bottom: 12px;
+  }
+  &__list-text-content {
+    // margin-bottom: 12px;
+    display: flex;
+    gap: 7px;
+    line-height: 19.2px;
+  }
+  &__list-text {
+    margin-bottom: 12px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: rgba(133, 136, 146, 1);
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.popup-login {
+  width: 728px;
+  align-self: center;
+  &__steps {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    color: #7b58e8;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+  }
+  &__btn {
+    background-color: #7b58e8;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.13s;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Inter";
+    font-style: normal;
+    line-height: 24px;
+    width: 100%;
+    height: 52px;
+    margin-top: 24px;
+  }
+  &__btn:hover {
+    background-color: #9e7fff;
+  }
+
+  &__btn:active {
+    background-color: #6948d2;
+  }
+}
+
+.popup-contacts {
+  align-self: center;
+  width: 400px;
+  &__subheading {
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(79, 85, 98, 1);
+    margin-bottom: 12px;
+  }
+  &__link {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: rgba(123, 88, 232, 1);
+    margin-bottom: 10px;
+    margin-top: -4px;
+    cursor: pointer;
+  }
+}
+.popup--active {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-window--active {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-politics {
+  max-width: 728px;
+  margin-top: 100px;
+}
+.popup-right {
+  max-width: 728px;
+  margin-top: 100px;
+}

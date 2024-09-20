@@ -1,0 +1,22 @@
+@import "./reset";
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(24, 27, 34, 1);
+  min-width: 320px;
+}
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1360px;
+  width: 100%;
+  padding: 0 20px;
+}

@@ -1,0 +1,173 @@
+@import url(../../assets/font/Inter/stylesheet.css);
+.accordion {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: start;
+  width: 100%;
+}
+.accordion-item {
+  background: #21242b;
+  border-radius: 8px;
+  cursor: pointer;
+  max-height: 64px;
+  min-height: 64px;
+  overflow: hidden;
+  padding: 20px;
+  transition: 0.35s;
+  width: 100%;
+
+  &__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__heading {
+    margin: 0;
+    color: #858892;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    transition: 0.13s;
+    width: fit-content;
+  }
+
+  &__toggle-btn {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.13s;
+    background-image: url(../../assets/img/accordionOpen.svg);
+  }
+  &__content {
+    width: 100%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 30px;
+  }
+}
+.accordion-item--active {
+  max-height: 100%;
+}
+.accordion-item:hover .accordion-item__heading {
+  color: #fff;
+}
+.accordion-item--active .accordion-item__heading {
+  color: #fff;
+  transition: 0.13s;
+}
+.accordion-item--active .accordion-item__toggle-btn {
+  background-image: url(../../assets/img/accordionClose.svg) !important;
+}
+.accordion-item:hover .accordion-item__toggle-btn {
+  background-image: url(../../assets/img/accordionOpenActive.svg);
+}
+.accordion-item__content p {
+  margin: 0;
+  color: #858892;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.accordion-item--active .accordion-item__header {
+  height: unset;
+}
+
+@media (max-width: 1220px) {
+  .accordion-item__heading {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cols {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .faq__heading {
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 760px) {
+  .cols {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 575px) {
+  .faq__heading {
+    font-size: 24px;
+  }
+}
+@media (max-width: 475px) {
+  .faq__point-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq__text {
+    margin-top: 12px;
+  }
+}
+@media (max-width: 335px) {
+.faq__heading {
+    font-size: 22px;
+  }
+   .faq__text {
+    font-size: 18px;
+  }
+  .accordion-item__heading{
+    font-size: 14px;
+  }
+}
+// @media (max-width: 575px) {
+//   .header-navbar {
+//     display: none;
+//   }
+//   .wallet__variant-btn {
+//     font-size: 13px;
+//     padding: 18px 0;
+//     margin: 0;
+//     font-size: 13px;
+//   }
+//   .wallet__checkbox-label {
+//     font-size: 13px;
+//     font-weight: 400;
+//     line-height: 16px;
+//   }
+//   .payment-method__icon-container,
+//   .payment-method {
+//     height: 90px;
+//     width: 120px;
+//   }
+// }
+// @media (max-width: 360px) {
+//   .stats__info {
+//     grid-template-rows: 1fr 1fr;
+//     grid-template-columns: none;
+//   }
+//   .wallet__variant {
+//     display: flex;
+//   }
+//   .stats__title {
+//     font-size: 24px;
+//   }
+// }

@@ -1,0 +1,178 @@
+@import url(../../assets/font/Inter/stylesheet.css);
+
+.wallet {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  &__radio {
+    width: 100%;
+  }
+  &__caption {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(79, 85, 98, 1);
+    margin-bottom: 12px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__variant {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(auto-fit, minmax(78.5px, 1fr));
+    width: 100%;
+  }
+  &__variant-btn {
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(133, 136, 146, 1);
+    background-color: rgba(33, 36, 43, 1);
+    border: none;
+    margin-bottom: 21px;
+    cursor: pointer;
+    transition: 0.13s;
+  }
+  &__variant-btn:hover {
+    background-color: rgba(47, 51, 61, 1);
+  }
+  &__form-btn {
+    background-color: rgba(123, 88, 232, 1);
+    width: 100%;
+    padding: 20px 32px;
+    border-radius: 12px;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+    transition: 0.13s;
+  }
+  &__form-btn:hover {
+    background-color: rgba(158, 127, 255, 1);
+  }
+  &__checkbox {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  &__checkbox-label {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+  }
+  &__checkbox-check {
+    display: none;
+  }
+  &__input-container {
+    align-items: center;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+  &__input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(33, 36, 43, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: 0.13s;
+  }
+  &__input-error {
+    outline: 2px solid rgba(243, 73, 73, 1);
+  }
+  &__input:focus {
+    border: 1px solid rgba(123, 88, 232, 1);
+    background-color: rgba(47, 51, 61, 1);
+    outline: none;
+    font-family: "Inter";
+    font-weight: 100;
+  }
+  &__input:hover {
+    background-color: rgba(47, 51, 61, 1);
+  }
+  &__input-icon {
+    background-image: url(../../assets/img/Wallet.svg);
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+  }
+  &__input-container-link {
+    background-color: #181b22;
+    border: none;
+    border-radius: 100px;
+    color: #858892;
+    cursor: pointer;
+    font-family: "Inter";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 4px 10px;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    top: 20px;
+  }
+
+  &__checkbox-input-label {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #282d36;
+  }
+  &__checkbox-input-label::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    opacity: 0;
+    transition: 0.13s;
+    background-image: url(../../assets/img/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  &__checkbox-input-label-error {
+    background-color: #ff5252;
+  }
+  &__checkbox-input-label-error::after {
+    opacity: 1;
+    visibility: visible;
+    background-image: url(../../assets/img/check2.svg);
+  }
+}
+.wallet__checkbox-input-label:hover::after,
+.wallet__checkbox-check:checked + .wallet__checkbox-input-label::after {
+  opacity: 1;
+}
+
+// .wallet__checkbox-check:focus + .wallet__checkbox-input-label {
+//   outline: 1px solid #7b58e8;
+// }

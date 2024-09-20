@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  gap: 32px;
+  margin-right: 60px;
+  &__link {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(133, 136, 146, 1);
+  }
+  &__link-btn {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+}

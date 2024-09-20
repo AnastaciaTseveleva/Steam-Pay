@@ -1,0 +1,120 @@
+.main {
+  margin-top: 32px;
+  &__wrapper {
+    flex-direction: column;
+  }
+  &__container {
+    gap: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 1065px) {
+  .wallet__checkbox {
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 960px) {
+  .stats__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+  }
+  .main__container {
+    flex-direction: column;
+  }
+  .wallet__payment {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .payment-method__icon-container,
+  .payment-method {
+    width: 176px;
+  }
+  .wallet__checkbox {
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 760px) {
+  .stats {
+    flex-direction: column;
+  }
+  .stats__title {
+    margin-bottom: 0;
+  }
+  .logo-name {
+    display: none;
+  }
+  .header-navbar {
+    margin-right: 33px;
+  }
+  .footer-navbar {
+    flex-direction: column;
+    gap: 32px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 32px;
+  }
+
+  .footer__copyrights-link {
+    padding: 0;
+  }
+  .footer__right-group {
+    flex-direction: column;
+    gap: 32px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-navbar {
+    display: none;
+  }
+  .wallet__variant-btn {
+    font-size: 13px;
+    padding: 18px 0;
+    margin: 0;
+    font-size: 13px;
+  }
+  .wallet__checkbox-label {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .payment-method__icon-container,
+  .payment-method {
+    height: 90px;
+    width: 120px;
+  }
+}
+@media (max-width: 360px) {
+  .stats__info {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
+  .wallet__variant {
+    display: flex;
+  }
+  .stats__title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,60 @@
+@import url(../../assets/font/Inter/stylesheet.css);
+.header {
+  &__wrapper {
+    justify-content: space-between;
+  }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &__left-panel {
+    display: flex;
+    align-items: center;
+  }
+  &__right-panel {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-link {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+  }
+  &__social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  &__social-link {
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+  }
+  &__social-link-tg {
+    background-image: url(../../assets/img/32.svg);
+  }
+  &__social-link-tg:hover {
+    background-image: url(../../assets/img/tgHover.svg);
+  }
+  &__social-link-vk {
+    background-image: url(../../assets/img/vkHeader.svg);
+  }
+  &__social-link-vk:hover {
+    background-image: url(../../assets/img/vkHover.svg);
+  }
+  &__burger-btn {
+    background-image: url(../../assets/img/burgerOpen.svg);
+    background-color: inherit;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    height: 24px;
+    padding: 0;
+    position: relative;
+    transition: 0.13s;
+    width: 24px;
+    z-index: 100;
+  }
+  &__burger-btn--open {
+    background-image: url(../../assets//img/burgerClose.svg);
+  }
+}

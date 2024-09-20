@@ -1,0 +1,44 @@
+.burger-window {
+  scrollbar-width: none;
+  backdrop-filter: blur(7.5px);
+  background-color: rgba(24, 27, 34, 0.616);
+  display: flex;
+  height: 100%;
+  justify-content: end;
+  opacity: 0;
+  overflow: auto;
+  position: fixed;
+  transition: 0.2s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 99;
+  overflow: hidden;
+}
+.burger-menu {
+  align-items: flex-start;
+  background-color: #181b22;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: start;
+  padding: 24px;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  transition: 0.13s;
+  visibility: hidden;
+  width: 60%;
+}
+.burger-navbar {
+  flex-direction: column;
+  margin: 0;
+  gap: 24px;
+}
+.burger-window--active {
+  opacity: 1;
+  visibility: visible;
+}
+.burger-window--active .burger-menu {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  visibility: visible;
+}
